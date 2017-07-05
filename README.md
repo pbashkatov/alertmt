@@ -1,8 +1,8 @@
 # alertmt
 Simple python script to check directories and send email alerts with Message Type and TRN
 Script consists 2 configuration files ([YAML format](https://en.wikipedia.org/wiki/YAML)):
-1) alertsmtp.yml – mail server configuration – I don’t know your parameters, maybe it is needed to review.
-2) alert.yml – scan configuration, more detailed description further.
+1) alertmtsmtp.yml – mail server configuration – I don’t know your parameters, maybe it is needed to review.
+2) alertmt.yml – scan configuration, more detailed description further.
 
 alert.yml
 each configuration block begins with ‘---‘ from 1-th position. Here one block:
@@ -51,9 +51,9 @@ How it works:
 - Read TRN from message, create email and send it to receivers in list ‘rcvr’
 
 Important to understand the logic: script checks files in the folders BUT not the REAL message flow
-- alert.py – python script, created on python 3.4.1
-- alert.yml – scan configuration
-- alertsmtp.yml – SMTP server config file. It is needed to test or maybe make some changes because it will depend from your SMTP server.
+- alertmt.py – python script, created on python 3.4.1
+- alertmt.yml – scan configuration
+- alertmtsmtp.yml – SMTP server config file. It is needed to test or maybe make some changes because it will depend from your SMTP server.
 
 One more important thing:
 I did not catch any exceptions – existing of configuration files, folders, and so on.

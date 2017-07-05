@@ -1,0 +1,16 @@
+---
+smtp: localhost
+port: 25
+# 'yes' - enable authorisation 
+# 'no'  - disable authorisation 
+auth: no                            
+# 'yes' - enable TLS
+# 'no'  - disable TLS
+starttls: no
+username: user
+passowrd: password
+sender: alertscript@mymail.local
+# 0 - no debug, default
+# 1 - for level results in debug messages for connection and for all messages sent to and received from the server. 
+# 2 - for level results in these messages being timestamped. NB: Only in Python 3.5!
+debuglevel: 0  

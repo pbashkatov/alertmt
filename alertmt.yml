@@ -1,0 +1,34 @@
+---
+# directory to scan. NOTE: '\' at the end mandatory!
+cur_path: 'c:\work\alert\out\'
+# file mask to scan  
+cur_mask: '*.out'
+# new folder to move files. NOTE: '\' at the end mandatory!
+new_dir: 'c:\work\alert\out\'
+# new extension to rename files
+new_ext: 'out'
+# message type to scan
+mtyp: 103
+# substring to find with message type
+ftag: '{2:O103'
+# to get TRN from message text
+trnf: ':20:'
+# list of the receiver to inform
+rcvr: [bash@alliance.ru, support@alliance.ru]
+# email subject, TRN will be added at the end
+em_subj: MTXXX was received
+# email text
+em_text: email text block 001
+---
+cur_path: 'c:\work\alert\out\'
+cur_mask: '*.out'              
+new_dir: 'c:\work\alert\out\'  
+new_ext: 'out'                 
+mtyp: 999
+ftag: '{2:I999'
+trnf: ':20:'
+rcvr: 
+    - bash@alliance.ru
+    - support@alliance.ru
+em_subj: MTXXX was sent
+em_text: email text block 002
